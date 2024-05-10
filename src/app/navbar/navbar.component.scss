@@ -1,0 +1,32 @@
+// src/app/navbar/navbar.component.scss
+:host {
+    display: block;
+    width: 100%;
+    margin: 0; // Removes any margin
+    padding: 0; // Removes any padding
+}
+
+mat-toolbar {
+    display: flex;
+    justify-content: center; // Centers the buttons horizontally
+    background-color: #5ebf67b0; // Semi-transparent green background
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    button.mat-button {
+        font-size: 18px; // Increase font size
+        font-weight: bold; // Make font bold
+        color: white; // Ensures text color is white
+        margin: 0 10px; // Adds horizontal spacing between buttons
+    }
+}
+
+// src/app/navbar/navbar.component.scss
+@media (max-width: 600px) {
+    mat-toolbar button.mat-button {
+        font-size: 16px; // Slightly smaller font size for smaller devices
+    }
+}

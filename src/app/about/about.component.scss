@@ -1,0 +1,28 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // Center content vertically
+    align-items: center; // Center content horizontally
+    height: calc(100vh - 120px); // Subtract the total height of the navbar and footer
+    text-align: center;
+    padding: 20px; // Adjust this padding if necessary
+    box-sizing: border-box;
+    max-width: 800px; // Limits the width for better readability
+    margin: 0 auto; // Centers the container horizontally
+    line-height: 1.5; // Maintains line spacing
+    overflow-y: auto; // Allows scrolling if content overflows vertically
+}
+
+h1,
+p {
+    margin-top: 10px; // Uniform top margin for all elements
+    margin-bottom: 10px; // Uniform bottom margin for all elements
+}
+
+// Media queries for smaller devices
+@media (max-width: 768px) {
+    .about-container {
+        padding: 10px;
+        height: calc(100vh - 100px); // Adjusting height calculation for smaller headers/footers if needed
+    }
+}

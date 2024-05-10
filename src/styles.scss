@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+h1,
+h2,
+h3,
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; // Ensures boldness across the site
+}
+
+// src/styles.scss
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box; // Ensures that padding and borders are included in the width calculation
+}
