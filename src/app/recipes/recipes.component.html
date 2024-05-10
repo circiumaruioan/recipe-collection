@@ -1,7 +1,0 @@
-<!-- src/app/recipes/recipes.component.html -->
-<div class="recipe-grid">
-    <div *ngFor="let recipe of recipes" class="recipe-item" (click)="openDialog(recipe)">
-        <img [src]="recipe.imageUrl" alt="{{ recipe.name }}">
-        <p>{{ recipe.name }}</p>
-    </div>
-</div>
